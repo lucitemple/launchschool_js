@@ -1,4 +1,4 @@
-// Sum or Product of Consecutive Numbers
+// 6. Sum or Product of Consecutive Numbers
 
 // Write a program that asks the user to enter an integer greater than 0, then asks whether the user wants to determine the sum or the product of all numbers between 1 and the entered integer, inclusive.
 

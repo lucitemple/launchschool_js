@@ -1,5 +1,9 @@
 // Calculator Bonus Features
 // 1. Ask the user for another calculation
+// 2. Extract messages in the program to a configuration file.
+// 3. Internationalization
+
+const MESSAGES = require("./calculator_messages.json");
 
 const readline = require("readline-sync");
 
@@ -16,7 +20,7 @@ let questions = [
   "What operation would you like to perform?\n1) Add 2) Subtract 3) Multiply 4) Divide",
 ];
 
-prompt("Welcome to Calculator!");
+prompt(MESSAGES.welcome);
 
 askQuestions();
 

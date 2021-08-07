@@ -1,0 +1,89 @@
+1. Function that returns the sum of two numbers
+
+INFORMAL Pseudocode
+
+Given two numbers as arguments.
+
+Set a variable value equal to the first number added to the second number.
+
+Return the saved value.
+
+FORMAL Pseudocode
+
+START
+
+# Given two numbers as arguments.
+
+SET savedNumber = number1 + number2
+
+PRINT savedNumber
+
+END
+
+2. Function that takes an array of strings and returns a string that is all those strings concatenated together
+
+INFORMAL Pseudocode
+
+Given a collection of strings.
+
+Iterate through the collection one by one.
+
+- initialise a string value
+- for each iteration, add/concatenate/reduce the element to the string value.
+
+After iterating through the collection, return the saved value.
+
+FORMAl Pseudocode
+
+START
+
+# Given a collection of strings called "strings"
+
+SET iterator = 0;
+SET savedString = '';
+
+WHILE iterator <= length of strings
+SET currentString = value within strings collection at space "iterator"
+
+    SET savedString to value of savedString + currentString
+
+    iterator = iterator + 1
+
+PRINT savedString
+
+END
+
+
+3. A function that takes an array of integers, and returns a new array with every other element
+
+INFORMAL Pseudocode
+
+Given a collection of integers.
+
+Set an empty array.
+
+Iterate through the collection of integers by every second element.
+
+- set the iterator to += 2
+- for each iteration, add the current element to the array.
+
+After iterating through the collection, return the saved value from the array.
+
+FORMAL Pseudocode
+
+START
+
+# Given a collection of integers called "numbers".
+
+SET savedArray = empty array
+SET iterator = 0
+
+WHILE iterator <= length of numbers
+SET currentNumber = value within numbers collection at space "iterator"
+
+    push currentNumber to savedArray
+    iterator = iterator + 2
+
+PRINT savedArray
+
+END

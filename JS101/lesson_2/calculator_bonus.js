@@ -58,14 +58,14 @@ function calculator() {
 }
 
 while (output) {
-  prompt("Do another calculation? 1) Yes 2) No");
-  let rerun = readline.question();
-  while (!["1", "2"].includes(rerun)) {
-    prompt("Must choose 1 for Yes or 2 for No");
-    rerun = readline.question();
-    output = undefined;
+  prompt("Do another calculation? Y/N");
+  let rerun = readline.question().toUpperCase();
+  while (!["Y", "N"].includes(rerun)) {
+    prompt("Must choose Y for Yes or N for No");
+    rerun = readline.question().toUpperCase();
   }
-  if (rerun === "1") {
+  output = undefined;
+  if (rerun === "Y") {
     operands = [];
     askQuestions();
   }

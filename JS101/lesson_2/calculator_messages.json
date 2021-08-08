@@ -1,6 +1,14 @@
 {
   "welcome": "Welcome to Calculator!",
-  "getFirstNumber": "What's the first number?",
-  "getSecondNumber": "What's the second number?",
-  "getOperator": "What operation would you like to perform?\n1) Add 2) Subtract 3) Multiply 4) Divide"
+  "getOperands": [
+    "What's the first number?",
+    "What's the second number?",
+    "What operation would you like to perform?\n1) Add 2) Subtract 3) Multiply 4) Divide"
+  ],
+  "invalidInput": [
+    "Hmm... that doesn't look like a valid number.",
+    "Must choose 1, 2, 3, or 4",
+    "Must choose Y for Yes or N for No"
+  ],
+  "runAgain": "Do another calculation? Y/N"
 }

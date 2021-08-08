@@ -14,12 +14,6 @@ function prompt(message) {
 let operands = [];
 let output = null;
 
-let questions = [
-  "What's the first number?",
-  "What's the second number?",
-  "What operation would you like to perform?\n1) Add 2) Subtract 3) Multiply 4) Divide",
-];
-
 prompt(MESSAGES.welcome);
 
 askQuestions();
@@ -29,16 +23,16 @@ function invalidInput(operand) {
 }
 
 function askQuestions() {
-  for (let idx = 0; idx < questions.length; idx++) {
-    prompt(questions[idx]);
+  for (let idx = 0; idx < MESSAGES.getOperands.length; idx++) {
+    prompt(MESSAGES.getOperands[idx]);
     operands[idx] = readline.question();
     while (invalidInput(operands[idx])) {
-      prompt("Hmm... that doesn't look like a valid number.");
+      prompt(MESSAGES.invalidInput[0]);
       operands[idx] = readline.question();
     }
   }
   while (!["1", "2", "3", "4"].includes(operands[2])) {
-    prompt("Must choose 1, 2, 3, or 4");
+    prompt(MESSAGES.invalidInput[1]);
     operands[2] = readline.question();
   }
   calculator();
@@ -62,10 +56,10 @@ function calculator() {
 }
 
 while (output) {
-  prompt("Do another calculation? Y/N");
+  prompt(MESSAGES.runAgain);
   let rerun = readline.question().toUpperCase();
   while (!["Y", "N"].includes(rerun)) {
-    prompt("Must choose Y for Yes or N for No");
+    prompt(MESSAGES.invalidInput[2]);
     rerun = readline.question().toUpperCase();
   }
   output = undefined;

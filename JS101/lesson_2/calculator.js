@@ -3,7 +3,8 @@
 // Save this number in a variable
 // Ask the user for a second number
 // Save this number in a variable
-// Ask the user for the type of operation to perform (add, subtract, multiply or divide)
+// Ask the user for the type of operation to perform
+// (add, subtract, multiply or divide)
 // Perform the operation on the two numbers
 // Print the result to the terminal
 

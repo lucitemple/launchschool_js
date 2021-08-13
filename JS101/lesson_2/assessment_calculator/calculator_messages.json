@@ -1,0 +1,18 @@
+{
+    "int": {
+      "getLang": "Welcome to Calculator! Select 'en' for English.\n Willkommen beim Rechner! Wählen Sie 'de' für Deutsch.\n 欢迎使用计算器！ 中文选择“zh”。",
+      "invalidLang": "Select 'en', Wählen Sie 'de', 中文选择“zh”。"
+    },
+  "en": {
+    "getNum1": "What's the first number?",
+    "getNum2": "What's the second number?",
+    "getOperation": "What operation would you like to perform?\n(+) Add \n(-) Subtract\n(*) Multiply\n(/) Divide?",
+    "selectRerun": "Do another calculation? Y/N",
+    "invalidNum": "Hmm... that doesn't look like a valid number.",
+    "invalidOperation": "Must choose +, -, *, or / for operation",
+    "invalidCalculation": "Cannot divide 0. Select new operation.",
+    "invalidSelection": "Must choose Y for Yes or N for No"
+  },
+  "de": {},
+  "zh": {}
+}

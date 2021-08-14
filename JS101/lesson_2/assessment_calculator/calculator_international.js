@@ -66,22 +66,22 @@ function getOperands() {
   getInputAndValidate("forOperation");
 }
 
-function getInputAndValidate(object) {
+function getInputAndValidate(item) {
   let response = readline.question(
-    prompt(MESSAGES[dataset.forLang.value][dataset[object].inputMessage])
+    prompt(MESSAGES[dataset.forLang.value][dataset[item].inputMessage])
   );
 
-  while (isInvalid(response, dataset[object].testType)) {
+  while (isInvalid(response, dataset[item].testType)) {
     response = readline.question(
-      prompt(MESSAGES[dataset.forLang.value][dataset[object].invalidMessage])
+      prompt(MESSAGES[dataset.forLang.value][dataset[item].invalidMessage])
     );
   }
-  dataset[object].value = response;
+  dataset[item].value = response;
   while (dataset.forOperation.value === "/" && dataset.forNum2.value === "0") {
     prompt(
       MESSAGES[dataset.forLang.value][dataset.forCalculation.invalidMessage]
     );
-    getInputAndValidate(object);
+    getInputAndValidate(item);
   }
 }
 

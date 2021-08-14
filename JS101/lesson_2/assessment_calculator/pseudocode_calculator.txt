@@ -1,0 +1,38 @@
+# Informal pseudocode
+
+Set readline to require readline-sync.
+Set messages to require JSON messages.
+
+Set firstNumber, secondNumber, operation, and result to undefined values  ( firstNumber, secondNumber, operation, and result).
+
+Define prompt function to print messages (passed as arguments) to display in reader-friendly format.
+
+Question/prompt welcome message, with language selection options.
+    - Get user input and save value as lang.
+    - Use lang messages throughout.
+
+for each required value (firstNumber, secondNumber, operation, lang):
+    - Question/prompt message
+    - get user input
+    - save value to variable. 
+    - validity check compares value to valid input:
+        - input must NOT be empty.
+        - lang must be en, de, or zh
+        - firstNumber value must be an integer.
+        - operation value must be insensitive A, S, D or M.
+        - while input is invalid, question/prompt error message to get new input value.
+        - while secondNumber is '0' and operation is 'D'(divide), handle exception: prompt new input  (new operation).
+
+Match operation value to the appropriate operator statement.
+    - firstNumber & secondNumber coerced from strings to numbers
+    - binary operator used with firstNumber & secondNumber 
+    - save result
+    - print result to screen.
+
+Question/prompt message to get user input to rerun program.
+    - valid input is Y or N.
+    - while input is invalid, prompt user to provide new input.
+    - if value is Y, reset values ( firstNumber, secondNumber, operation, and result) and rerun program (not including initial language selection).
+
+End.
+

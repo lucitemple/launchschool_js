@@ -67,16 +67,16 @@ function getOperands() {
 }
 
 function getInputAndValidate(object) {
-  //   dataset[object].value
   let response = readline.question(
     prompt(MESSAGES[dataset.forLang.value][dataset[object].inputMessage])
   );
 
-  while (isInvalid(dataset[object].value, dataset[object].testType)) {
-    dataset[object].value = readline.question(
+  while (isInvalid(response, dataset[object].testType)) {
+    response = readline.question(
       prompt(MESSAGES[dataset.forLang.value][dataset[object].invalidMessage])
     );
   }
+  dataset[object].value = response;
   while (dataset.forOperation.value === "/" && dataset.forNum2.value === "0") {
     prompt(
       MESSAGES[dataset.forLang.value][dataset.forCalculation.invalidMessage]
@@ -105,9 +105,6 @@ function calculate(num1, num2, operation) {
   };
   result = actions[operation];
   result = Number.isInteger(result) ? result : +result.toFixed(2);
-  /*   if (!Number.isInteger(result)) {
-    result = +result.toFixed(2);
-  } */
   prompt(`${num1} ${operation} ${num2} = ${result}`);
 }
 

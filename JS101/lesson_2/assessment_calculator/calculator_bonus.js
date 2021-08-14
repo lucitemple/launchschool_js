@@ -1,7 +1,7 @@
 // Calculator Bonus Features
 // 1. Ask the user for another calculation
 // 2. Extract messages in the program to a configuration file.
-// 3. Internationalization
+
 
 const MESSAGES = require("./calculator_messages.json");
 

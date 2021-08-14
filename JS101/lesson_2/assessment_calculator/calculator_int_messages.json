@@ -1,0 +1,34 @@
+{
+  "en": {
+    "getLang": "Welcome to Calculator! Select 'en' for English.\n Willkommen beim Rechner! Wählen Sie 'de' für Deutsch.\n 欢迎使用计算器！ 中文选择“zh”。",
+    "invalidLang": "Select 'en', Wählen Sie 'de', 中文选择“zh”。",
+    "getNum1": "What's the first number?",
+    "getNum2": "What's the second number?",
+    "getOperation": "What operation would you like to perform?\n(+) Add \n(-) Subtract\n(*) Multiply\n(/) Divide?",
+    "selectRerun": "Do another calculation? Y/N",
+    "invalidNum": "Hmm... that doesn't look like a valid number.",
+    "invalidOperation": "Must choose +, -, *, or / for operation",
+    "invalidCalculation": "Cannot divide 0. Select new operation.",
+    "invalidSelection": "Must choose Y for Yes or N for No"
+  },
+  "de": {
+    "getNum1": "Wie lautet die erste Zahl?",
+    "getNum2": "Wie lautet die zweite Zahl?",
+    "getOperation": "Welche Operation möchten Sie durchführen?\n(+) Hinzufügen \n(-) Subtrahieren\n(*) Multiplizieren\n(/) Teilen?",
+    "selectRerun": "Eine andere Berechnung durchführen? J/N",
+    "invalidNum": "Hmm... das sieht nicht nach einer gültigen Zahl aus.",
+    "invalidOperation": "Muss +, -, * oder / für den Betrieb wählen.",
+    "invalidCalculation": "Kann 0 nicht teilen. Neuen Vorgang auswählen.",
+    "invalidSelection": "Muss J für Ja oder N für Nein wählen."
+  },
+  "zh": {
+    "getNum1": "第一个数字是多少？",
+    "getNum2": "第二个数字是多少？",
+    "getOperation": "您想执行什么操作？\n(+) 添加 \n(-) 减去\n(*) 乘\n(/) 划分？",
+    "selectRerun": "再计算一下？ 是/否",
+    "invalidNum": "嗯……这看起来不是一个有效的数字。",
+    "invalidOperation": "必须选择 +、-、* 或 / 进行运算",
+    "invalidCalculation": "不能除以 0。选择新的操作。",
+    "invalidSelection": "必须为是选择 是 或为否选择 否"
+  }
+}

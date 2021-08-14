@@ -85,7 +85,7 @@ function isInvalid(inputValue, testType, operation, num2) {
     language: !["en", "de", "zh"].includes(inputValue),
     number: Number.isNaN(Number(inputValue)),
     operation: !["+", "-", "*", "/"].includes(inputValue),
-    rerun: !["Y", "N"].includes(inputValue.toUpperCase()),
+    rerun: !["Y", "N", "J", "是", "否"].includes(inputValue.toUpperCase()),
     calculation: operation === "/" && num2 === "0",
   };
   return inputValue.trimStart() === "" || tests[testType];
@@ -114,7 +114,8 @@ function runCalculator() {
 
 function rerun() {
   getInputAndValidate("forRerun");
-  if (dataset.forRerun.value.toUpperCase() === "Y") {
+  let response = dataset.forRerun.value.toUpperCase();
+  if (response === "Y" || response === "J" || response === "是") {
     reset();
     runCalculator();
   }

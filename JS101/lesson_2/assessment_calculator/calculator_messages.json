@@ -29,6 +29,6 @@
     "invalidNum": "嗯……这看起来不是一个有效的数字。",
     "invalidOperation": "必须选择 +、-、* 或 / 进行运算",
     "invalidCalculation": "不能除以 0。选择新的操作。",
-    "invalidSelection": "必须为是选择 是 或为否选择 不"
+    "invalidSelection": "必须为是选择 是 或为否选择 否"
   }
 }

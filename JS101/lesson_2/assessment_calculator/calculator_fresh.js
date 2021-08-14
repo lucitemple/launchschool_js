@@ -65,10 +65,8 @@ function getInputAndValidate(object) {
     );
   }
   while (dataset.forOperation.value === "/" && dataset.forNum2.value === "0") {
-    dataset.forOperation.value = readline.question(
-      prompt(
-        MESSAGES[dataset.forLang.value][dataset.forCalculation.invalidMessage]
-      )
+    prompt(
+      MESSAGES[dataset.forLang.value][dataset.forCalculation.invalidMessage]
     );
     getInputAndValidate(object);
   }
@@ -114,8 +112,8 @@ function runCalculator() {
 
 function rerun() {
   getInputAndValidate("forRerun");
-  let response = dataset.forRerun.value.toUpperCase();
-  if (response === "Y" || response === "J" || response === "是") {
+  //let response = dataset.forRerun.value.toUpperCase();
+  if (["Y", "J", "是"].includes(dataset.forRerun.value.toUpperCase())) {
     reset();
     runCalculator();
   }
